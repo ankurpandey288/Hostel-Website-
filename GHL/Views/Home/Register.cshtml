@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="innerpage-banner">
+    <div class="layer1">
+    </div>
+</div>
+<section class="w3ls-section contact py-5">
+    <div class="container py-sm-3">
+        <div class="w3ls-title">
+            <h2 class="heading text-center mb-sm-5 mb-4">Register</h2>
+        </div>
+        <div class="row contact_wthreerow agileits-w3layouts">
+
+            <div class="col-lg-5 col-md-6 agileits_w3layouts_contact_gridl">
+                <div class="agileits_mail_grid_right_grid">
+                    <h4>Gym, Hostel, Library</h4>
+                    <p>Become a registered user to avail user only priveleges provided exclusively to our users.</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 mt-md-0 mt-4 w3l_contact_form">
+                <form action="#" method="post">
+                    <input type="text" name="Name" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="" />
+                    
+                    <input type="email" name="Email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="" />
+                    
+                    <input type="text" name="Contact" value="Contact" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Contact';}" required="" />
+                    
+                    <textarea name="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}" required="">Address</textarea>
+                    
+                    <input type="text" name="Password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}" required="" />
+                    <br />
+                    <fieldset>
+                        <legend>Access</legend>
+                        <input type="checkbox" name="Access" value="Gym" />&nbsp;<label>Gym</label>&nbsp;&nbsp;
+                        <input type="checkbox" name="Access" value="Hostel" />&nbsp;<label>Hostel</label>&nbsp;&nbsp;
+                        <input type="checkbox" name="Access" value="Library" />&nbsp;<label>Library</label>
+                    </fieldset>
+                    <label>Id Proof :&nbsp;</label>
+                    <input type="file" name="Id" />
+                    <input type="submit" value="Register" class="mt-4">
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+

@@ -1,0 +1,254 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- banner-text -->
+<div class="slider">
+    <div class="callbacks_container">
+        <ul class="rslides callbacks callbacks1" id="slider4">
+            <li>
+                <div class="banner-top">
+                    <div class="layer">
+                        <div class="container">
+                            <div class="banner-info_agile_w3ls">
+                                <h2>Your <span>Fitness</span> Destination. </h2>
+                                <p>Weight loss, weight training, bodybuilding and more...</p>
+                                @*<a href="About" class="mr-2">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>*@
+                            <a href="@Url.Action("Index","Gym")"> &nbsp;Details &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="banner-top1">
+                    <div class="layer">
+                        <div class="container">
+                            <div class="banner-info_agile_w3ls">
+                                <h3>Looking For A<span>Hostel.</span></h3>
+                                <p>Hostel accomodation available here.</p>
+                                @*<a href="About" class="mr-2">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>*@
+                            <a href="@Url.Action("Index","Hostel")"> &nbsp;Details &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="banner-top2">
+                    <div class="layer">
+                        <div class="container">
+                            <div class="banner-info_agile_w3ls">
+                                <h3>Lets Gain Some <span>Knowledge.</span></h3>
+                                <p>Library facility at its best.</p>
+                                @*<a href="About" class="mr-2">Read More <i class="fa fa-caret-right" aria-hidden="true"></i></a>*@
+                            <a href="@Url.Action("Index","Library")"> &nbsp;Details &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>  <!-- Social Icons -->
+    <!--<div class="w3_agileits_social_media">
+        <ul>
+            <li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+            <li><a href="#" class="wthree_behance"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>-->
+    <!-- //Social Icons -->
+    <div class="clearfix"> </div>
+
+
+
+
+    @*<p class="ab">connect with us</p>*@
+
+    <!-- To bottom button-->
+    <div class="thim-click-to-bottom">
+        <div class="rotate">
+            <a href="#Service" class="scroll">
+                <i class="fa fa-ellipsis-v"></i>
+            </a>
+        </div>
+    </div>
+    <!-- //To bottom button-->
+</div>
+<!--//Slider-->
+<!-- /services -->
+<section class="featured_services py-5" id="Service">
+    <div class="container py-3">
+        <h3 class="heading text-center mb-5">Our Services</h3>
+        <div class="row agile_inner_info">
+            <div class="col-lg-4 col-md-6 w3_agile_services_grid">
+                <div class="agile_services_grid">
+                    <div class="hover06 column">
+                        <div>
+                            <figure><img src="~/images/young-fitness.jpg" alt=" " class="img-responsive"></figure>
+                        </div>
+                    </div>
+                    <div class="agile_services_grid_pos">
+                        <i class="fa fa-heart" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h4>Gym</h4>
+                <p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt .Aliquam lacus turpis.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-5 w3_agile_services_grid">
+                <div class="agile_services_grid">
+                    <div class="hover06 column">
+                        <div>
+                            <figure><img src="~/images/room-dormitory1.jpg" alt=" " class="img-responsive"></figure>
+                        </div>
+                    </div>
+                    <div class="agile_services_grid_pos">
+                        <i class="fa fa-bed" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h4>Hostel</h4>
+                <p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt .Aliquam lacus turpis.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-5 w3_agile_services_grid">
+                <div class="agile_services_grid">
+                    <div class="hover06 column">
+                        <div>
+                            <figure><img src="~/images/library-desk.jpg" alt=" " class="img-responsive"></figure>
+                        </div>
+                    </div>
+                    <div class="agile_services_grid_pos">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <h4>Library</h4>
+                <p>Lorem ipsum dolor sit amet, do eiusmod tempor incididunt .Aliquam lacus turpis.</p>
+            </div>
+            <div class="mx-auto mt-lg-4 mt-5 text-center">
+                <a href="services.html">Explore all Services</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //services -->
+<!--/middle-->
+<section class="middle-sec-agileinfo-w3ls py-5">
+    <div class="container py-3">
+        <h3 class="heading text-center mb-5"> Latest Tour Blog </h3>
+        <div class="row inner-sec">
+            <div class="col-lg-4 col-md-6 news-left">
+                <ul id="demo1_thumbs" class="list-inline">
+                    <li>
+                        <a href="~/images/banner1.jpg">
+                            <img src="~/images/b1.jpg" alt="" data-desoslide-caption="<h3>Latest Post 1</h3>">
+                            <div class="mid-text-info">
+                                <h4>Maecenas aliqua Aenean aliquam porta sem ins.</h4>
+                                <p class="font-italic">posted 2 days ago </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/images/banner2.jpg">
+                            <img src="~/images/b2.jpg" alt="" data-desoslide-caption="<h3>Latest Post 2</h3>">
+                            <div class="mid-text-info">
+                                <h4>Maecenas aliqua Aenean aliquam porta sem ins.</h4>
+                                <p class="font-italic">posted 2 days ago </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/images/banner5.jpg">
+                            <img src="~/images/b5.jpg" alt="" data-desoslide-caption="<h3>Latest Post 3</h3>">
+                            <div class="mid-text-info">
+                                <h4>Maecenas aliqua Aenean aliquam porta sem ins.</h4>
+                                <p class="font-italic">posted 2 days ago </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="~/images/banner4.jpg">
+                            <img src="~/images/b4.jpg" alt="" data-desoslide-caption="<h3>Latest Post 4</h3>">
+                            <div class="mid-text-info">
+                                <h4>Maecenas aliqua Aenean aliquam porta sem ins.</h4>
+                                <p class="font-italic">posted 2 days ago </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="demo1_main_image" class="col-lg-8 col-md-6 news-right">
+                <h4 class="text-uppercase mb-4">Adventure Travel Point </h4>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+
+</section>
+<!--//middle-->
+<!-- team -->
+<div class="team py-5">
+    <div class="agile_dot_info two">
+        <div class="container">
+            <h3 class="heading text-center mb-5">Our Team</h3>
+            <div class="row agileits_team_grids">
+                <div class="col-lg-3 col-sm-6 agileits_team_grid">
+                    <div class="agileits_team_grid_figure">
+                        <img src="~/images/b1.jpg" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="agileits_team_grid_figure_social">
+                        <ul class="w3ls_social">
+                            <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                    <h4> Charlotte <span>guide</span></h4>
+                    <p>Morbi non elit sed neque init rhoncus maximus ac enim.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 agileits_team_grid">
+                    <div class="agileits_team_grid_figure">
+                        <img src="~/images/b1.jpg" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="agileits_team_grid_figure_social">
+                        <ul class="w3ls_social">
+                            <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                    <h4>Isabella <span>guide</span></h4>
+                    <p>Morbi non elit sed neque init rhoncus maximus ac enim.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 agileits_team_grid">
+                    <div class="agileits_team_grid_figure">
+                        <img src="~/images/b2.jpg" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="agileits_team_grid_figure_social">
+                        <ul class="w3ls_social">
+                            <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                    <h4>Alexander  <span>guide</span></h4>
+                    <p>Morbi non elit sed neque init rhoncus maximus ac enim.</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 agileits_team_grid">
+                    <div class="agileits_team_grid_figure">
+                        <img src="~/images/b2.jpg" alt=" " class="img-responsive" />
+                    </div>
+                    <div class="agileits_team_grid_figure_social">
+                        <ul class="w3ls_social">
+                            <li><a href="#" class="w3_agile_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#" class="w3_agile_dribble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                    <h4>Laura Carl <span>guide</span></h4>
+                    <p>Morbi non elit sed neque init rhoncus maximus ac enim.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- //team -->

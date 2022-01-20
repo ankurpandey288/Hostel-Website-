@@ -1,0 +1,163 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutGym.cshtml";
+}
+<script>
+    $(window).scroll(function () {
+        $('.item').each(function () {
+            var imgPos = $(this).offset().top;
+            var imgHeight = $(this).height();
+            var topOfWindow = $(window).scrollTop();
+            if (imgPos < topOfWindow + imgHeight && imgPos + imgHeight > topOfWindow) {
+                $(this).addClass(".animated");
+            } else {
+                $(this).removeClass(".animated");
+            }
+        });
+    });
+    $('.item').css('visibility', 'hidden');
+</script>
+<style>
+    .gym-home {
+        background: linear-gradient(rgba(25, 24, 24, 0.4), rgba(23, 22, 23, 0.5)), url(../../images/gym-header.jpg) no-repeat;
+        background-size: cover;
+        min-height: 630px;
+        background-attachment: fixed;
+    }
+    p > i {
+        color: darkorange;
+    }
+    .card-title{
+        font-family:'Bodoni MT';
+    }
+</style>
+
+<div class="gym-home p-5">
+    <div class="row mt-5"></div>
+    <div class="row mt-5"></div>
+    <div class="row mt-5">
+        @*<div class="col-6 col-sm-6 col-xl-6 col-lg-6 col-md-6">
+            <div class="w3ls_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.967389821937!2d77.27669126440718!3d28.630739440914414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcab758ca079%3A0x412350daeeab102!2sAIIPS%20LIBRARY%20(1)!5e0!3m2!1sen!2sin!4v1604383315835!5m2!1sen!2sin"></iframe>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-xl-6 col-lg-6 col-md-6">
+            <div class="w3-about p-5 m-2 mt-3" style="background: linear-gradient(rgba(125,125,125,0.7),rgba(125,125,125,0.7))">
+                <p>
+                    <i class="fa fa-clock-o">&nbsp;&nbsp;&nbsp;</i><span class="text-white"> Timings : 6 AM - 10 AM</span><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="text-white">5 PM -10 PM</span>
+                </p>
+                <br />
+                <p>
+                    <i class="fa fa-phone-alt">&nbsp;&nbsp;&nbsp;</i><span class="text-white">Contact no - 9871775527, 9953495340</span><br />
+                    <span class="text-white">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9953495341, 9953495343, 9953495344</span>
+                </p>
+            </div>
+        </div>*@
+    </div>
+</div>
+<div class="container-ab">
+    <div class="row mt-3 mb-5">
+        <div class="col-5">
+            <div class="card border-0">
+                <div class="card-body">
+                    <img src="~/images/Trainer-1080.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="col-7 p-3">
+            <div class="card border-0">
+                <h3 class="card-title ml-3 mt-5">Professional Trainers</h3>
+                <div class="card-body">
+                    <p>
+                        The scope of practice for a personal trainer has a primary focus
+                        on prevention and involves enhancing components of health and fitness
+                        for the general, healthy population or those cleared for exercise.
+                        We provide you with well qualified and professional trainers to help
+                        develop your different body areas properly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5">
+        <div class="col-6">
+            <div class="card border-0">
+                <h3 class="card-title ml-3 mt-5">Dietitians</h3>
+                <div class="card-body">
+                    <blockquote style="font-family:Yellowtail; font-size:20px;">
+                        “It is health that is real wealth and not pieces of gold and silver.”
+                    </blockquote>
+                    <p>– Mahatma Gandhi</p>
+                    <br />
+                    <p>
+                        Dietitians provide food and nutrition information, and support
+                        people to improve their health. They provide advice on nutrition-related matters.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card border-0">
+                <div class="card-body">
+                    <img src="~/images/dietician-1080.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5">
+        <div class="col-6">
+            <div class="card border-0">
+                <div class="card-body">
+                    <img src="~/images/yoga-class-1080.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="col-6 p-3">
+            <div class="card border-0">
+                <h3 class="card-title ml-3 mt-4">Yoga Classes</h3>
+                <div class="card-body">
+                    <p>
+                        Not interested in heavy weights or bodybuilding. No problem. 
+                        We have a solution for you. We also provide yoga classes in batches.
+                        Register in any one session and gain advantages of doing yoga.
+                        <br /><br />
+                        <blockquote style="font-family:Yellowtail; font-size:20px;">
+                            "Yoga does not just change the way we see things, it transforms the person who sees.""
+                        </blockquote>
+                        -B.K.S. Iyengar
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 ">
+        <div class="col-6">
+            <div class="card border-0">
+                <h3 class="card-title ml-3 mt-5">Workout and Diet Schedules</h3>
+                <div class="card-body">
+                    <p>
+                        Scheduling is the art of planning your activities so that you 
+                        can achieve your goals and priorities in the time you have available.
+                    </p>
+                    <br /><br />
+
+                    <blockquote style="font-family:Yellowtail; font-size:20px;">
+                        “Lack of direction, not lack of time, is the problem. We all have twenty-four hour days.”
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card border-0">
+                <div class="card-body">
+                    <img src="~/images/Schedule-1080.jpg" style="max-height:400px;max-width:500px;"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

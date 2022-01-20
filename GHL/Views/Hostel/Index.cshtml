@@ -1,0 +1,162 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutHostel.cshtml";
+}
+<style>
+    .gym-home {
+        background: linear-gradient(rgba(25, 24, 24, 0.4), rgba(23, 22, 23, 0.5)), url(../../images/hostelsjpg.jpg) no-repeat;
+        background-size: cover;
+        min-height: 620px;
+        background-attachment: fixed;
+    }
+
+    .hostel-home {
+        background: linear-gradient(rgba(125,125,125,0.5),rgba(125,125,125,0.5));
+        border-radius: 30px 30px;
+        align-content: center;
+        text-align: center;
+    }
+
+    .icon-text {
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    img:hover {
+        box-shadow: 0px 0px 15px 5px #f79595;
+    }
+
+    div > p > i {
+        color: darkorange;
+    }
+
+    div > div > p > span {
+        font-weight: 600;
+        font-size: 24px;
+    }
+
+    .item {
+        height: auto;
+        width: auto;
+    }
+    .container-fluid{
+        height:auto;
+    }
+    .card-title {
+        font-family: 'Bodoni MT';
+    }
+</style>
+
+<div class="gym-home p-5">
+    <div class="row mt-5"></div>
+    <div class="row mt-5"></div>
+    <div class="row mt-5">
+        @*<div class="col-6 col-sm-6 col-xl-6 col-lg-6 col-md-6">
+            <div class="w3ls_map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.967389821937!2d77.27669126440718!3d28.630739440914414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfcab758ca079%3A0x412350daeeab102!2sAIIPS%20LIBRARY%20(1)!5e0!3m2!1sen!2sin!4v1604383315835!5m2!1sen!2sin"></iframe>
+            </div>
+        </div>
+        <div class="col-6 col-sm-6 col-xl-6 col-lg-6 col-md-6">
+            <div class="w3-about p-5 m-2 mt-3" style="background: linear-gradient(rgba(125,125,125,0.7),rgba(125,125,125,0.7))">
+                <p>
+                    <i class="fa fa-map-marker-alt">&nbsp;&nbsp;&nbsp;</i><span class="text-white">Office Address - A1/470 Main Market, Shakarpur, East Delhi-110092</span><br />
+                    <i class="fa fa-phone-alt">&nbsp;&nbsp;&nbsp;</i><span class="text-white">Contact no - 9871775527, 9953495340, 9953495341, 9953495343, 9953495344</span>
+                </p>
+            </div>
+        </div>*@
+    </div>
+</div>
+<div class="container-fluid" >
+    <div class="row mt-3 mb-5">
+        <div class="col-6">
+            <div class="card border-0">
+                <div class="card-body">
+                    <img src="~/images/teenagers-1080.jpg" />
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card border-0">
+                <h1 class="card-title ml-3 mt-5">Hostel For Boys and Girls</h1>
+                <div class="card-body">
+                    <p>We provide hostel facility for both boys and girls.</p>
+                    <p>This hostel facility is for all whether you are a student, aspirant or a working professional.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5">
+        <div class="col-6">
+            <div class="card border-0 p-2">
+                <h1 class="card-title ml-3 mt-5">Amenities</h1>
+                <div class="card-body">
+                    <p>Your room will have all the furniture and facilities you need for a comfortable stay.</p>
+                    <div class="row mt-5">
+                        <div class="col-3 text-center">
+                            <span class="fa fa-bed fa-4x"></span>
+                            <p class="icon-text">Bed with mattress</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <span class="fa fa-s15 fa-fw fa-4x"></span>
+                            <p class="icon-text">Attached washroom</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <span class="fas fa-chair fa-4x"></span>
+                            <p class="icon-text">Study <br /> Table</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <span class="fas fa-box-open fa-4x"></span>
+                            <p class="icon-text">Storage Space</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card border-0">
+                <div class="card-body">
+                    <img src="~/images/bed-1080.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5 mb-5 min-500">
+        <div class="col-6">
+            <div class="card border-0 p-3 m-3">
+                <div class="card-body">
+                    <img src="~/images/sandwich-1080.jpg" style="border-radius:500px 500px; box-shadow:0px 0px 15px 5px rgba(125,125,125,0.5)" />
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="card border-0">
+                <h1 class="card-title ml-5 mt-5">Services</h1>
+                <div class="card-body">
+                    <p>Meals 3 times a day. Unlimited laundry and much more services to have.</p>
+                    <div class="row mt-5">
+                        <div class="col-3 text-center">
+                            <span class="fa fa-utensils fa-4x"></span>
+                            <p class="icon-text">Delicious Food</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <span class="fa fa-tshirt fa-4x"></span>
+                            <p class="icon-text">Laundary Service</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <span class="fas fa-wifi fa-4x"></span>
+                            <p class="icon-text">Network Booster</p>
+                        </div>
+                        <div class="col-3 text-center">
+                            <span class="fa fa-shield-alt fa-4x"></span>
+                            <p class="icon-text">24/7 Security</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

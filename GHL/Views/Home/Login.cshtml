@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="innerpage-banner">
+    <div class="layer1">
+    </div>
+</div>
+<section class="w3ls-section contact py-5">
+    <div class="container py-sm-3">
+        <div class="w3ls-title">
+            <h2 class="heading text-center mb-sm-5 mb-4">Log In</h2>
+        </div>
+        <div class="row contact_wthreerow agileits-w3layouts">
+
+            <div class="col-lg-5 col-md-6 agileits_w3layouts_contact_gridl">
+                <div class="agileits_mail_grid_right_grid">
+                    <h4>Gym, Hostel, Library</h4>
+                    <p>Login to access your account and the services provided by us.</p>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 mt-md-0 mt-4 w3l_contact_form">
+                <form action="#" method="post">
+                    <input type="email" name="Email" value="Email/Username" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"
+                           required=""/>
+                    <input type="text" name="Password" value="Password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Password';}"
+                           required=""/>
+                    <input type="submit" value="Login" class="mt-4">
+                    <a href="#" class="ml-2">Forgot Password?</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+

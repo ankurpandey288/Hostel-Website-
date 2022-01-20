@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Adventure Travel Point" />
+    <script type="application/x-javascript">
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!--// Meta tag Keywords -->
+    <!-- pop up box -->
+    <link href="~/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //pop up box -->
+
+    <link rel="stylesheet" href="~/css/jquery.desoslide.css">
+
+    <!-- css files -->
+    <link rel="stylesheet" href="~/css/bootstrap.css"> <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" /> <!-- Style-CSS -->
+    <link rel="stylesheet" href="~/css/font-awesome.css"> <!-- Font-Awesome-Icons-CSS -->
+    <!-- //css files -->
+
+    <link rel="stylesheet" href="~/css/jquery-ui.css" />
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+    <!-- //web-fonts -->
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body>
+
+    <!--Header-->
+    <header>
+        <div class="container agile-banner_nav">
+            <div class="row header-top">
+                <div class="col-md-5 top-left p-0">
+                    <p><i class="fa fa-phone" aria-hidden="true"></i> Call us : +91-8766235849 </p>
+                </div>
+                <div class="col-md-7 top-right p-0">
+                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>D-57, Noida Sector - 10 ,Uttar Pradesh
+                </div>
+            </div>
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                @*<h1><a class="navbar-brand" href="Index">A T P</a></h1>*@
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Index","Library")">Home @*<span class="sr-only">(current)</span>*@</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Amenities","Library")">Amenities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Gallery","Library")">Gallery</a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                                Other Services
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu agile_short_dropdown">
+                                <li>
+                                    <a href="@Url.Action("Index","Gym")">Gym</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Index","Hostel")">Hostel</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="@Url.Action("Contact","Library")">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--Header-->
+
+
+
+    @RenderBody()
+
+    <!-- footer -->
+    <footer class="py-5">
+        <div class="container py-md-3">
+            <div class="row footer-grids pb-md-5 pb-3">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6 col-6 pl-5">
+                            <a href="#"> <i class="fa fa-envelope ml-5"></i>Send Message</a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 mt-md-0 mt-2 pl-5">
+                            <a href="#"> <i class="fa fa-skype ml-5"></i>Skype Call</a>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-6 mt-md-0 mt-2 pl-5">
+                            <a href="#"> <i class="fa fa-comment ml-5"></i>Online Chat</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subscribe-grid text-center">
+                <p class="para three mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at placerat ante. Praesent nulla nunc, pretium dapibus efficitur in, auctor eget elit. Lorem ipsum dolor sit amet </p>
+                <h5 class="pb-3">Subscribe for our latest updates</h5>
+                <form action="#" method="post">
+                    <input class="form-control" type="email" placeholder="Subscribe" name="Subscribe" required="">
+                    <button class="btn1">
+                        <i class="fa fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+    <!-- copyright -->
+    <section class="copyright py-4 text-center">
+        <div class="container">
+            <p>© 2019 All Rights Reserved | Design by <a href="http://zservicedesk.com/" target="=_blank"> ZServiceDesk </a></p>
+        </div>
+    </section>
+    <!-- //copyright -->
+    <!-- js-scripts -->
+    @*<div class="container body-content">*@
+
+    @*<hr />*@
+    @*<footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>*@
+    @*</div>*@
+
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")
+        @RenderSection("scripts", required: false)*@
+    <!-- js-scripts -->
+    <!-- js -->
+    <script type="text/javascript" src="~/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+    <!-- //js -->
+    <!-- desoslide-JavaScript -->
+    <script src="~/js/jquery.desoslide.js"></script>
+    <script>
+        $('#demo1_thumbs').desoSlide({
+            main: {
+                container: '#demo1_main_image',
+                cssClass: 'img-responsive'
+            },
+            effect: 'sideFade',
+            caption: true
+        });
+    </script>
+
+    <!-- Calendar -->
+    <script src="~/js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker,#datepicker1").datepicker();
+        });
+    </script>
+    <!-- //Calendar -->
+    <!-- banner slider -->
+    <script src="~/js/responsiveslides.min.js"></script>
+    <script>
+        $(function () {
+            $("#slider4").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: true,
+                speed: 1000,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+        });
+    </script>
+    <!-- //banner slider -->
+    <!--pop-up-box -->
+    <script src="~/js/jquery.magnific-popup.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.popup-with-zoom-anim').magnificPopup({
+                type: 'inline',
+                fixedContentPos: false,
+                fixedBgPos: true,
+                overflowY: 'auto',
+                closeBtnInside: true,
+                preloader: false,
+                midClick: true,
+                removalDelay: 300,
+                mainClass: 'my-mfp-zoom-in'
+            });
+        });
+    </script>
+    <!-- //pop-up-box -->
+    <!-- start-smoth-scrolling -->
+    <script src="~/js/SmoothScroll.min.js"></script>
+    <script type="text/javascript" src="~/js/move-top.js"></script>
+    <script type="text/javascript" src="~/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <script>
+        $('nav li a').filter(function () {
+            return this.href === location.href;
+        }).addClass('active');
+    </script>
+    <!-- //here ends scrolling icon -->
+    <!-- start-smoth-scrolling -->
+    <!-- //js-scripts -->
+
+</body>
+</html>
